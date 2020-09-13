@@ -101,3 +101,74 @@ img {
   margin: 4em 0 2em 0;
   text-align: center;
 }
+
+@media (min-width: 600px) {
+  .card__profile-job {
+    right: -95%;
+    top: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__profile-job {
+    font-size: 0.8571428571428571em;
+    right: -94%;
+  }
+
+  .card__name {
+    font-size: 1.2857142857142858em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    margin: 8em 0 6.5em 0;
+  }
+
+  .header__title {
+    flex-grow: 1;
+    margin: 0;
+    width: 50%;
+  }
+
+  .header__who {
+    width: 50%;
+  }
+
+  .header__who-content {
+    font-size: 1.2857142857142858em;
+    width: 90%;
+  }
+
+  /* Card */
+  .card {
+    width: 30%;
+  }
+
+  .card:nth-child(2n) {
+    margin-bottom: unset;
+    margin-top: unset;
+  }
+
+  .card:nth-child(2),
+  .card:nth-child(5) {
+    margin-bottom: 2em;
+    margin-top: 6em;
+  }
+
+  .card__profile-job {
+    right: -96%;
+  }
+
+  /* Footer */
+  .footer {
+    margin: 8em 0 4em 0;
+  }
+}
