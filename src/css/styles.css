@@ -21,8 +21,8 @@ body {
 }
 
 img {
-  height: auto;
-  width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -51,6 +51,43 @@ img {
   font-weight: 600;
   margin-bottom: 0.5555555555555556em;
   text-transform: uppercase;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Card */
+.card {
+  width: 48%;
+}
+
+.card__profile {
+  position: relative;
+}
+
+.card__profile-image {
+  width: 90%;
+}
+
+.card__profile-job {
+  transform: rotate(90deg);
+  transform-origin: 0% 15%;
+  text-transform: uppercase;
+  font-size: 0.7142857142857143em;
+  right: -98%;
+  position: absolute;
+  top: -1%;
+  width: 100%;
+}
+
+.card__name {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 0.7142857142857143em;
 }
 
 /* Footer */
